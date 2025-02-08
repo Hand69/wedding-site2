@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свадьба Анжелики и Никиты</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+
+    <!-- <audio id="backgroundMusic" loop autoplay>
+        <source src="sound/313b9231e4ae916.mp3" type="audio/mp3">
+        Ваш браузер не поддерживает аудио.
+    </audio> -->
+
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Приглашение на свадьбу</h1>
+            <h2 class="couple">Анжелика & Никита</h2>
+            <p class="date">15 июля 2025 года</p>
+        </div>
+
+        <div class="countdown">
+            <h3>До свадьбы осталось:</h3>
+            <div id="countdown" class="countdown-timer"></div>
+        </div>
+
+        <div class="image-section">
+            <img src="img/IMG_3916.PNG" alt="Свадебная картинка" class="wedding-image">
+        </div>
+
+        <!-- Форма RSVP -->
+    <div class="container">
+        <h1>Приглашение на свадьбу</h1>
+        <form id="rsvpForm">
+            <input type="text" name="name" placeholder="Введите ваше ФИО" required>
+            <select name="status">
+                <option value="Иду">Иду!</option>
+                <option value="Не уверен">Пока не уверен...</option>
+            </select>
+            <button type="submit">Отправить</button>
+        </form>
+        <p id="rsvpResponseMessage" style="display:none;"></p> <!-- Сообщение об отправке RSVP -->
+    </div>
+
+
+
+        <button id="backToTop" class="back-to-top">↑</button>
+    </div>
+
+    <div id="thankYouModal" class="modal">
+        <div class="modal-content">
+            <p>Спасибо за ваш ответ! Мы вас ожидаем на нашей свадьбе!</p>
+            <button id="closeModal">Закрыть</button>
+        </div>
+    </div>
+
+    <div class="map-container">
+        <h3>Наша свадьба пройдет здесь:</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=YOUR_GOOGLE_MAPS_LINK" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="guestbook-container">
+        <h2>Гостевая книга</h2>
+        <form id="guestbookForm">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+        <p id="guestbookResponseMessage" style="display:none;"></p> <!-- Сообщение об отправке гостевой книги -->
+    
+        <div id="guestbookMessages">
+            <!-- Сообщения будут добавляться сюда -->
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

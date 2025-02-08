@@ -1,0 +1,1 @@
+"# wedding-site"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin https://github.com/Hand69/wedding-site.gitgit push -u origin main
